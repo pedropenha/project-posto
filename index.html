@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Postos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadCarros.html">Cadastrar carros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadPostos.html">Cadastrar postos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="d-flex justify-content-around align-items-center flex-wrap" style="width: 100vw; height: 100vh;">
+            <div class="card text-white bg-primary" style="max-width: 100%">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3>Carros</h3>
+                    <button class="btn btn-outline-light" onclick="window.location.href='cadCarros.html'">+</button>
+                </div>
+            </div>
+            <div class="card-body table-responsive-sm">
+                <table class="table text-center text-white">
+                    <thead>
+                    <tr>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">KM</th>
+                        <th scope="col">Consumo (G)</th>
+                        <th scope="col">Consumo (A)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Ford</td>
+                        <td>Fiesta</td>
+                        <td>117117</td>
+                        <td>9.5KM/L</td>
+                        <td>7.2KM/L</td>
+                    </tr>
+                    <tr>
+                        <td>Fiat</td>
+                        <td>Uno</td>
+                        <td>152396</td>
+                        <td>12.5KM/L</td>
+                        <td>9.2KM/L</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+            <div class="card text-white bg-success" style="max-width: 100%;">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3>Postos</h3>
+                        <button class="btn btn-outline-light" onclick="window.location='cadPostos.html'">+</button>
+                    </div>
+                </div>
+                <div class="card-body table-responsive-sm">
+                    <table class="table text-center text-white">
+                        <thead>
+                        <tr>
+                            <th scope="col">Nome posto</th>
+                            <th scope="col">Bandeira</th>
+                            <th scope="col">Valor (G)</th>
+                            <th scope="col">Valor (A)</th>
+                            <th scope="col">Valor (D)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Meridional</td>
+                            <td>Shell</td>
+                            <td>R$ 6.39</td>
+                            <td>R$ 4.39</td>
+                            <td>R$ 4.90</td>
+                        </tr>
+                        <tr>
+                            <td>Benedit</td>
+                            <td>Petrobras</td>
+                            <td>R$ 6.39</td>
+                            <td>R$ 4.39</td>
+                            <td>R$ 4.90</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="./assets/scripts/bootstrap.min.js"></script>
+</body>
+</html>

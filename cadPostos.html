@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+    <title>Home</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Postos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadCarros.html">Cadastrar carros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cadPostos.html">Cadastrar postos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="d-flex vw-100 vh-100 justify-content-center align-items-center">
+        <form class="p-3 w-75">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 pb-3">
+                    <label for="nomePosto" class="form-label">Nome do posto</label>
+                    <input type="text" class="form-control" id="nomePosto" placeholder="Meridional">
+                </div>
+                <div class="col-md-4 col-sm-12 pb-3">
+                    <label for="bandeira" class="form-label">Bandeira</label>
+                    <input type="text" class="form-control" id="bandeira" placeholder="Shell">
+                </div>
+                <div class="col-md-4 col-sm-12 pb-3">
+                    <label for="valorG" class="form-label">Valor (G)</label>
+                    <input type="number" class="form-control" id="valorG" placeholder="R$ 4.39">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 pb-3">
+                    <label for="valorA" class="form-label">Valor (A)</label>
+                    <input type="number" class="form-control" id="valorA" placeholder="R$ 6.39">
+                </div>
+                <div class="col-md-6 col-sm-12 pb-3">
+                    <label for="valorD" class="form-label">Valor (D)</label>
+                    <input type="number" class="form-control" id="valorD" placeholder="R$ 4.67">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center pt-5">
+                <button class="btn btn-outline-success">Cadastrar postos</button>
+            </div>
+        </form>
+    </div>
+</main>
+<script type="text/javascript" src="./assets/scripts/bootstrap.min.js"></script>
+</body>
+</html>
